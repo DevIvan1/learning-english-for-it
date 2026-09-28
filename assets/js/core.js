@@ -681,7 +681,7 @@
         sel.disabled = true;
         note.className = files ? 'pop-note' : 'pop-note warn';
         note.textContent = files
-          ? 'Основная озвучка — записанные аудиофайлы, они лежат в папке сайта и работают без интернета.'
+          ? 'Озвучка — заранее записанные нейросетевые голоса, они играют в любом браузере.'
           : 'Браузер не поддерживает синтез речи. Попробуйте Chrome, Edge или Яндекс Браузер.';
         return;
       }
@@ -691,13 +691,13 @@
         sorted.map((v) => `<option value="${DS.esc(v.name)}"${v.name === cur ? ' selected' : ''}>${DS.esc(v.name)} · ${DS.esc(v.lang)}</option>`).join('');
       if (files) {
         note.className = 'pop-note';
-        note.textContent = 'Основная озвучка — записанные нейросетевыми голосами аудиофайлы в папке сайта: работают без интернета и VPN. Синтезатор браузера нужен только для фраз без записи.';
+        note.textContent = 'Озвучка — заранее записанные нейросетевые голоса. Синтезатор браузера подключается только для фраз без записи.';
       } else if (!voices.length) {
         note.className = 'pop-note warn';
         note.innerHTML = 'Английские голоса не найдены. Windows: <b>Параметры → Время и язык → Речь → Добавить голоса → English (United States)</b>, затем перезапустите браузер.';
       } else {
         note.className = 'pop-note';
-        note.textContent = `Найдено английских голосов: ${voices.length}. Озвучка работает прямо в браузере — без интернета и VPN.`;
+        note.textContent = `Найдено английских голосов: ${voices.length}. Озвучка работает прямо в браузере.`;
       }
     });
     renderXP();
@@ -738,7 +738,7 @@
       </div>
     </div>
     <div class="footer-bottom">
-      <span>Все материалы хранятся локально: без внешних шрифтов, CDN и видеохостингов.</span>
+      <span>Все материалы загружаются с этого сайта: без внешних шрифтов, CDN и видеохостингов.</span>
       <span>Озвучка — записанные нейросетевые голоса.</span>
     </div>
     <div class="footer-credit">

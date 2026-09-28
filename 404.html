@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <base href="/learning-english-for-it/">
+  <title>404 — страница не найдена · DevSpeak</title>
+  <meta name="robots" content="noindex">
+  <meta name="theme-color" content="#4f46e5">
+  <link rel="icon" href="favicon.ico" sizes="32x32">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script>try{var t=localStorage.getItem('devspeak:theme');if(t)document.documentElement.dataset.theme=t}catch(e){}</script>
+</head>
+<body data-page="404" class="ac-rose">
+  <div id="site-header"></div>
+
+  <main id="main">
+    <section class="hero">
+      <div class="container" style="max-width:760px;text-align:center">
+        <span class="hero-badge" style="justify-content:center"><b>HTTP 404</b> Not Found</span>
+        <h1>Такой страницы <span class="grad-text">нет</span></h1>
+        <p class="hero-lead" style="margin-left:auto;margin-right:auto">The server sent a <b>response</b>, but the page you requested does not exist. Похоже, ссылка устарела или в адресе опечатка.</p>
+        <div class="code-window" style="text-align:left;max-width:520px;margin:0 auto 28px">
+          <div class="cw-bar"><span class="cw-dot"></span><span class="cw-dot"></span><span class="cw-dot"></span></div>
+          <div class="cw-body" style="min-height:0" id="err-code"></div>
+        </div>
+        <div class="hero-cta" style="justify-content:center">
+          <a class="btn btn-primary btn-lg" href="./"><i data-icon="home"></i> На главную</a>
+          <a class="btn btn-lg" href="lessons.html"><i data-icon="book"></i> К урокам</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div id="site-footer"></div>
+
+  <script src="assets/js/core.js"></script>
+  <script>
+    document.getElementById('err-code').innerHTML = [
+      '<!-- Status: 404 Not Found -->',
+      'if (page === undefined) {',
+      "  return redirect('/home');",
+      '}'
+    ].map(function (l) { return '<span class="cw-line">' + DS.highlight(l) + '</span>'; }).join('');
+  </script>
+</body>
+</html>
