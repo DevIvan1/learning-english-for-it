@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Уроки · DevSpeak</title>
+  <meta name="description" content="Unit 18 Web Design: адаптированные тексты с переводом, озвучкой, словарными подсказками и вопросами.">
+  <meta name="theme-color" content="#4f46e5">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script>try{var t=localStorage.getItem('devspeak:theme');if(t)document.documentElement.dataset.theme=t}catch(e){}</script>
+</head>
+<body data-page="lessons" class="ac-indigo">
+  <div id="site-header"></div>
+
+  <main id="main">
+    <section class="page-hero">
+      <div class="container page-hero-inner">
+        <div class="page-icon"><i data-icon="book"></i></div>
+        <div>
+          <span class="eyebrow">Unit 18 · Web Design</span>
+          <h1>Уроки</h1>
+          <p class="lead">Текст юнита разбит на 7 коротких уроков. Наведите или нажмите на подчёркнутое слово — появится перевод и произношение. Каждый абзац можно послушать и перевести.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="container">
+      <div id="voice-notice"></div>
+      <div class="lesson-layout">
+        <aside class="lesson-nav" id="lesson-nav" aria-label="Список уроков"></aside>
+        <article class="reader" id="reader"></article>
+      </div>
+    </section>
+  </main>
+
+  <div id="site-footer"></div>
+
+  <script src="assets/js/data/vocab.js"></script>
+  <script src="assets/js/data/lessons.js"></script>
+  <script src="assets/js/data/audio.js"></script>
+  <script src="assets/js/core.js"></script>
+  <script src="assets/js/pages/lessons.js"></script>
+</body>
+</html>

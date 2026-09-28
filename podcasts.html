@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Подкасты · DevSpeak</title>
+  <meta name="description" content="DevSpeak Podcast: диалоги о веб-разработке на английском с транскриптом, переводом и вопросами.">
+  <meta name="theme-color" content="#7c3aed">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script>try{var t=localStorage.getItem('devspeak:theme');if(t)document.documentElement.dataset.theme=t}catch(e){}</script>
+</head>
+<body data-page="podcasts" class="ac-violet">
+  <div id="site-header"></div>
+
+  <main id="main">
+    <section class="page-hero">
+      <div class="container page-hero-inner">
+        <div class="page-icon"><i data-icon="mic"></i></div>
+        <div>
+          <span class="eyebrow">DevSpeak Podcast · 5 выпусков</span>
+          <h1>Подкасты</h1>
+          <p class="lead">Живые диалоги о веб-разработке: студенты, тимлид и тестировщик обсуждают темы юнита. Слушайте с транскриптом, включайте перевод и отвечайте на вопросы.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="container">
+      <div id="voice-notice"></div>
+      <div class="pod-layout">
+        <aside class="ep-list" id="ep-list" aria-label="Выпуски"></aside>
+        <div>
+          <div class="player-card" id="player"></div>
+          <div class="pod-below">
+            <div class="card"><h3 class="row" style="gap:8px">Ключевые слова</h3><div class="term-chips" id="pod-words"></div></div>
+            <div class="card"><h3>Проверьте понимание</h3><div id="pod-quiz"></div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div id="site-footer"></div>
+
+  <script src="assets/js/data/vocab.js"></script>
+  <script src="assets/js/data/media.js"></script>
+  <script src="assets/js/data/audio.js"></script>
+  <script src="assets/js/core.js"></script>
+  <script src="assets/js/pages/podcasts.js"></script>
+</body>
+</html>

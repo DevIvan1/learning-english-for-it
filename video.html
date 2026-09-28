@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Видеоуроки · DevSpeak</title>
+  <meta name="description" content="Анимированные видеоуроки по теме Web Design с озвучкой и субтитрами на английском и русском. Без YouTube.">
+  <meta name="theme-color" content="#e11d48">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script>try{var t=localStorage.getItem('devspeak:theme');if(t)document.documentElement.dataset.theme=t}catch(e){}</script>
+</head>
+<body data-page="video" class="ac-rose">
+  <div id="site-header"></div>
+
+  <main id="main">
+    <section class="page-hero">
+      <div class="container page-hero-inner">
+        <div class="page-icon"><i data-icon="video"></i></div>
+        <div>
+          <span class="eyebrow">4 видео · субтитры EN / RU</span>
+          <h1>Видеоуроки</h1>
+          <p class="lead">Короткие анимированные объяснения ключевых тем юнита с английской озвучкой и субтитрами. Видео собираются прямо в браузере, поэтому YouTube и VPN не нужны.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="container">
+      <div id="voice-notice"></div>
+      <div class="vid-layout">
+        <div>
+          <div class="vp" id="vp" tabindex="0" aria-label="Видеоплеер. Пробел — пауза, стрелки — переход между сценами">
+            <div class="vp-stage" id="stage">
+              <div class="vp-scene" id="scene"></div>
+              <div class="vp-overlay" id="overlay"></div>
+            </div>
+            <div class="vp-subs" id="subs" aria-live="polite"></div>
+            <div class="vp-controls">
+              <button type="button" class="vp-btn" id="vp-play" aria-label="Воспроизвести"></button>
+              <button type="button" class="vp-btn" id="vp-prev" aria-label="Предыдущая сцена"><i data-icon="prev"></i></button>
+              <button type="button" class="vp-btn" id="vp-next" aria-label="Следующая сцена"><i data-icon="next"></i></button>
+              <div class="vp-track" id="track"></div>
+              <span class="vp-time" id="vp-time"></span>
+              <button type="button" class="vp-btn txt is-on" id="vp-cc" aria-label="Субтитры" title="Субтитры"></button>
+              <button type="button" class="vp-btn txt" id="vp-speed" aria-label="Скорость" title="Скорость"></button>
+              <button type="button" class="vp-btn" id="vp-full" aria-label="Во весь экран" title="Во весь экран"><i data-icon="expand"></i></button>
+            </div>
+          </div>
+
+          <div class="vid-info">
+            <span class="eyebrow" id="vid-eyebrow"></span>
+            <h2 id="vid-title"></h2>
+            <p class="muted" id="vid-desc"></p>
+            <div class="chapters" id="chapters"></div>
+            <h3 class="block-title">Ключевые слова</h3>
+            <div class="term-chips" id="vid-words"></div>
+            <h3 class="block-title">Проверьте себя после просмотра</h3>
+            <div class="card" id="vid-quiz"></div>
+          </div>
+        </div>
+        <aside>
+          <h3 style="font-size:1rem;margin-bottom:12px">Все видео</h3>
+          <div class="vid-list" id="vid-list"></div>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <div id="site-footer"></div>
+
+  <script src="assets/js/data/vocab.js"></script>
+  <script src="assets/js/data/media.js"></script>
+  <script src="assets/js/data/audio.js"></script>
+  <script src="assets/js/core.js"></script>
+  <script src="assets/js/pages/video.js"></script>
+</body>
+</html>

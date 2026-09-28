@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Аудирование и говорение · DevSpeak</title>
+  <meta name="description" content="Аудирование по теме Web Design: диктант, распознавание слов на слух, понимание текста и говорение с записью голоса.">
+  <meta name="theme-color" content="#d97706">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script>try{var t=localStorage.getItem('devspeak:theme');if(t)document.documentElement.dataset.theme=t}catch(e){}</script>
+</head>
+<body data-page="listening" class="ac-orange">
+  <div id="site-header"></div>
+
+  <main id="main">
+    <section class="page-hero">
+      <div class="container page-hero-inner">
+        <div class="page-icon"><i data-icon="headphones"></i></div>
+        <div>
+          <span class="eyebrow">Listening · Speaking · упр. 12</span>
+          <h1>Аудирование и говорение</h1>
+          <p class="lead">Тренируйте слух на фразах из юнита: пишите диктант, узнавайте слова, слушайте тексты. Потом говорите сами по темам упражнения 12 и записывайте свой ответ.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="container">
+      <div id="voice-notice"></div>
+      <div class="row" style="margin-bottom:22px">
+        <div class="tabs" role="tablist">
+          <button class="tab is-active" type="button" data-tab="dictation"><i data-icon="pen"></i> Диктант</button>
+          <button class="tab" type="button" data-tab="words"><i data-icon="volume"></i> Услышь слово</button>
+          <button class="tab" type="button" data-tab="texts"><i data-icon="headphones"></i> Понимание текста</button>
+          <button class="tab" type="button" data-tab="speaking"><i data-icon="mic"></i> Говорение</button>
+        </div>
+      </div>
+      <div id="view" class="panel"></div>
+    </section>
+  </main>
+
+  <div id="site-footer"></div>
+
+  <script src="assets/js/data/vocab.js"></script>
+  <script src="assets/js/data/practice.js"></script>
+  <script src="assets/js/data/audio.js"></script>
+  <script src="assets/js/core.js"></script>
+  <script src="assets/js/pages/listening.js"></script>
+</body>
+</html>

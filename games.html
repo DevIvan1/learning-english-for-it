@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Игры · DevSpeak</title>
+  <meta name="description" content="Игры для запоминания слов Unit 18 Web Design: Memory, Speed Translate, Bug Hunt, сортировка, аббревиатуры и синонимы.">
+  <meta name="theme-color" content="#db2777">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script>try{var t=localStorage.getItem('devspeak:theme');if(t)document.documentElement.dataset.theme=t}catch(e){}</script>
+</head>
+<body data-page="games" class="ac-pink">
+  <div id="site-header"></div>
+
+  <main id="main">
+    <section class="page-hero" id="games-hero">
+      <div class="container page-hero-inner">
+        <div class="page-icon"><i data-icon="gamepad"></i></div>
+        <div>
+          <span class="eyebrow">Практика · рекорды · XP</span>
+          <h1>Игры</h1>
+          <p class="lead">Шесть мини-игр по словам юнита. Каждая игра приносит XP, а лучшие результаты сохраняются как рекорды.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="container" id="games-root"></section>
+  </main>
+
+  <div id="site-footer"></div>
+
+  <script src="assets/js/data/vocab.js"></script>
+  <script src="assets/js/data/practice.js"></script>
+  <script src="assets/js/data/audio.js"></script>
+  <script src="assets/js/core.js"></script>
+  <script src="assets/js/pages/games.js"></script>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Сбор фраз для озвучки</title>
+  <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+  <main class="container" style="padding:40px 20px;max-width:760px">
+    <h1>Сбор фраз для озвучки</h1>
+    <p>Служебная страница. Если вы изменили тексты в <code>assets/js/data/*.js</code>, скачайте <b>speech.json</b>, положите его в папку <code>tools/</code> и запустите:</p>
+    <pre class="card mono" style="white-space:pre-wrap">pip install edge-tts
+python tools/build_audio.py</pre>
+    <p>Скрипт создаст недостающие MP3 в <code>assets/audio/</code> и обновит <code>assets/js/data/audio.js</code>.</p>
+    <p id="count" class="muted"></p>
+    <button class="btn btn-primary" id="dl" type="button">Скачать speech.json</button>
+  </main>
+  <script src="../assets/js/data/vocab.js"></script>
+  <script src="../assets/js/data/lessons.js"></script>
+  <script src="../assets/js/data/media.js"></script>
+  <script src="../assets/js/data/practice.js"></script>
+  <script src="../assets/js/core.js"></script>
+  <script src="collect.js"></script>
+  <script>
+    const items = DS.collectSpeech();
+    document.getElementById('count').textContent = 'Фраз для озвучки: ' + items.length;
+    document.getElementById('dl').addEventListener('click', () => {
+      const blob = new Blob([JSON.stringify(items, null, 1)], { type: 'application/json' });
+      const a = document.createElement('a');
+      a.href = URL.createObjectURL(blob);
+      a.download = 'speech.json';
+      a.click();
+    });
+  </script>
+</body>
+</html>

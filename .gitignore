@@ -1,0 +1,6 @@
+# Textbook page photos: reference only, copyrighted — not published
+photo_*.jpg
+
+# Local tooling
+.claude/
+__pycache__/

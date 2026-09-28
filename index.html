@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>DevSpeak — английский для ИСиП</title>
+  <meta name="description" content="Интерактивный курс английского для студентов специальности «Информационные системы и программирование»: Unit 18 Web Design. Уроки, словарь, игры, аудирование, подкасты, видео и тест.">
+  <meta name="theme-color" content="#4f46e5">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script>try{var t=localStorage.getItem('devspeak:theme');if(t)document.documentElement.dataset.theme=t}catch(e){}</script>
+</head>
+<body data-page="home">
+  <div id="site-header"></div>
+
+  <main id="main">
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <span class="hero-badge"><b>Unit 18</b> Web Design · английский для ИСиП</span>
+          <h1>Английский для тех, кто <span class="grad-text">пишет код</span></h1>
+          <p class="hero-lead">Интерактивный курс по теме «Web Design» для студентов специальности «Информационные системы и программирование». Читай, слушай, играй и говори — всё в одном месте, прямо в браузере.</p>
+          <div class="hero-cta">
+            <a class="btn btn-primary btn-lg" href="lessons.html">Начать с урока <i data-icon="arrowRight"></i></a>
+            <a class="btn btn-lg" href="games.html"><i data-icon="gamepad"></i> Сразу играть</a>
+          </div>
+          <div class="hero-facts" id="hero-facts"></div>
+        </div>
+
+        <div class="hero-visual" aria-hidden="true">
+          <div class="code-window">
+            <div class="cw-bar">
+              <span class="cw-dot"></span><span class="cw-dot"></span><span class="cw-dot"></span>
+              <div class="cw-tabs" id="cw-tabs"></div>
+            </div>
+            <div class="cw-body" id="cw-body"></div>
+          </div>
+          <div class="float-badge fb-1"><span class="ico"><i data-icon="check"></i></span> Correct! +10 XP</div>
+          <div class="float-badge fb-2"><span class="ico"><i data-icon="volume"></i></span> rapid <span class="mono">/ˈræpɪd/</span></div>
+          <div class="float-badge fb-3"><span class="ico"><i data-icon="flame"></i></span> Combo ×5</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="progress">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <span class="eyebrow"><i data-icon="trophy"></i> Прогресс</span>
+            <h2>Твой путь от Intern до CTO</h2>
+            <p>Зарабатывай XP за уроки, игры, подкасты и тест. Прогресс хранится только в этом браузере.</p>
+          </div>
+        </div>
+        <div class="progress-panel" id="progress-panel"></div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <span class="eyebrow"><i data-icon="layout"></i> Разделы</span>
+            <h2>Что внутри</h2>
+          </div>
+        </div>
+        <div class="module-grid" id="module-grid"></div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container home-duo">
+        <div class="card card-lg wotd ac-cyan" id="wotd"></div>
+        <div class="card card-lg">
+          <span class="eyebrow"><i data-icon="rocket"></i> Как заниматься</span>
+          <h3 style="margin-bottom:10px">Маршрут на одну тему</h3>
+          <ol class="path">
+            <li><div><b>Прочитай урок</b><span>Наведи на подчёркнутое слово — появится перевод. Включи озвучку, если хочешь послушать. <a href="lessons.html">Уроки →</a></span></div></li>
+            <li><div><b>Выучи слова</b><span>Карточки со звуком и отметкой «Знаю». <a href="vocabulary.html">Словарь →</a></span></div></li>
+            <li><div><b>Потренируйся</b><span>Игры, диктант, подкасты и видео закрепят слова на слух. <a href="games.html">Игры →</a></span></div></li>
+            <li><div><b>Сдай тест</b><span>20 вопросов, оценка и сертификат для печати. <a href="test.html">Тест →</a></span></div></li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <span class="eyebrow"><i data-icon="book"></i> Учебник</span>
+            <h2>Упражнения учебника на сайте</h2>
+            <p>Каждое упражнение Unit 18 превращено в интерактивное задание.</p>
+          </div>
+        </div>
+        <div class="card table-wrap" style="padding:8px 10px">
+          <table class="map-table">
+            <thead><tr><th>В учебнике</th><th>Где на сайте</th></tr></thead>
+            <tbody>
+              <tr><td>Текст Unit 18 (с. 196–200)</td><td><a href="lessons.html">Уроки 1–6</a> — адаптированный текст с переводом каждого абзаца и озвучкой</td></tr>
+              <tr><td>1. Answer these questions</td><td><a href="lessons.html">Уроки</a> → блок «Обсуждение» с образцами ответов</td></tr>
+              <tr><td>2. Aspects of commercial design</td><td><a href="lessons.html#l3">Урок 3</a> и <a href="video.html">видео 1</a></td></tr>
+              <tr><td>3. Accessibility principles</td><td><a href="lessons.html#l5">Урок 5</a>, <a href="video.html#v3">видео 3</a>, <a href="podcasts.html#p3">подкаст 3</a></td></tr>
+              <tr><td>4. Summarize the text</td><td><a href="lessons.html#l7">Урок 7</a> → «Обсуждение», образец пересказа</td></tr>
+              <tr><td>5. Russian equivalents</td><td><a href="vocabulary.html">Словарь</a> + игры <a href="games.html#memory">Memory</a> и <a href="games.html#speed">Speed Translate</a></td></tr>
+              <tr><td>6. Replace with synonyms</td><td>Игра <a href="games.html#synonym">Synonym Swap</a> — с переводом каждого предложения</td></tr>
+              <tr><td>7. Abbreviations</td><td><a href="vocabulary.html#abbr">Словарь → Аббревиатуры</a> + игра <a href="games.html#abbr">Abbreviation Decoder</a></td></tr>
+              <tr><td>8–10. Reading «Issues»</td><td><a href="lessons.html#l7">Урок 7 «Web Design Debates»</a> и <a href="podcasts.html#p5">подкаст 5</a></td></tr>
+              <tr><td>11. English equivalents</td><td><a href="vocabulary.html">Словарь</a> → категория «Упр. 11»</td></tr>
+              <tr><td>12. Talking points</td><td><a href="listening.html#speaking">Аудирование → Говорение</a> с таймером и записью голоса</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <span class="eyebrow ac-green" style="color:var(--success)"><i data-icon="shield"></i> Без VPN</span>
+            <h2>Работает в России без VPN</h2>
+            <p>Сайт не зависит от заблокированных или замедленных сервисов.</p>
+          </div>
+        </div>
+        <div class="feature-list">
+          <div class="feature"><i data-icon="folder"></i><div><b>Всё хранится локально</b><span>Шрифты, иконки, тексты и скрипты лежат в папке сайта. Нет Google Fonts, CDN и YouTube.</span></div></div>
+          <div class="feature"><i data-icon="volume"></i><div><b>Озвучка в браузере</b><span>Подкасты, видео и аудирование озвучивает встроенный синтезатор речи. Аудиофайлы скачивать не нужно.</span></div></div>
+          <div class="feature"><i data-icon="wifiOff"></i><div><b>Работает офлайн</b><span>Достаточно открыть index.html с компьютера или флешки. Интернет не нужен.</span></div></div>
+          <div class="feature"><i data-icon="lock"></i><div><b>Никаких аккаунтов</b><span>XP и результаты хранятся в браузере на вашем устройстве. Никуда не отправляются.</span></div></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div id="site-footer"></div>
+
+  <script src="assets/js/data/vocab.js"></script>
+  <script src="assets/js/data/lessons.js"></script>
+  <script src="assets/js/data/media.js"></script>
+  <script src="assets/js/data/practice.js"></script>
+  <script src="assets/js/data/audio.js"></script>
+  <script src="assets/js/core.js"></script>
+  <script src="assets/js/pages/home.js"></script>
+</body>
+</html>
